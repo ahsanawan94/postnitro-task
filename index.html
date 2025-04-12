@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PostNitro </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <a href="/" class="logo">
+        <img src="/Images/logo-full.svg" alt="PostNitro Logo" />
+      </a>
+      <nav class="nav-items">
+        <div class="dropdown">
+          <button class="dropbtn">Getting Started <span>▼</span></button>
+          <div class="dropdown-content">
+            <a href="https://postnitro.ai/docs">Docs</a>
+            <a href="https://postnitro.ai/blog">Blog</a>
+            <a href="https://ls.postnitro.ai/affiliates">Affiliates</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Products <span>▼</span></button>
+          <div class="dropdown-content">
+            <a href="/carousels/linkedin">LinkedIn Carousel</a>
+            <a href="/carousels/instagram">Instagram Carousel</a>
+            <a href="/carousels/tiktok">TikTok Carousel</a>
+            <a href="/carousels/x-twitter">Twitter Carousel</a>
+            <a href="/products/embed">Embed</a>
+            <a href="/products/extension">Extension</a>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Free Tools <span>▼</span></button>
+          <div class="dropdown-content">
+            <a href="/free-ai-tools/twitter-free-banner-header-image-maker">Twitter Banner Maker</a>
+            <a href="/free-ai-tools/linkedin-free-banner-header-image-maker">LinkedIn Banner Maker</a>
+            <a href="/free-ai-tools/instagram-free-image-splitter-grid-maker">Instagram Grid Maker</a>
+            <a href="/free-ai-tools/linkedin-free-text-formatter">Text Formatter</a>
+            <a href="/free-ai-tools/linkedin-free-post-generator">Post Generator</a>
+          </div>
+        </div>
+          
+           <a href="#plans-section">Plans</a>
+         
+      </nav>
+    </div>
+
+    <div class="navbar-right">
+      <div class="language-selector">
+        <img src="Images/GB-UKM - United Kingdom.svg" class="selected-flag" id="selectedFlag" alt="Language">
+      
+        <div class="flag-dropdown" id="flagDropdown">
+          <img src="Images/DE - Germany.svg" data-lang="fr" alt="French">
+          <img src="Images/FR - France.svg" data-lang="ur" alt="Urdu">
+        </div>
+      </div>
+      
+      <a href="/app/post-maker" class="btnn outline">
+        ✨ Create Image Post
+        <span class="beta">BETA</span>
+      </a>
+      <a href="/app/carousel-maker" class="btnn filled">✨ Create Carousel</a>
+    </div>
+
+
+     <!-- Mobile Toggle -->
+     <div class="mobile-toggle" id="mobile-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#plans-section" >Plans</a>
+    <a href="/app/post-maker">✨ Create Image Post <span class="badge">BETA</span></a>
+    <a href="/app/carousel-maker">✨ Create Carousel</a>
+  </div>
+  </header>
+
+
+
+  <!------------hero section------------>
+
+  <section class="hero-section">
+    <div class="container">
+      <span class="badge"
+        >🟢AI-Powered Carousel Generator For Viral Content</span
+      >
+
+      <h1 class="hero-title">
+        AI-Powered Carousel Generator for Instagram, LinkedIn & More
+      </h1>
+
+      <p class="hero-description">
+        PostNitro's AI-powered platform creates stunning carousels for
+        Instagram, LinkedIn, TikTok, and more. Boost your social media
+        engagement with customizable, brand-aligned content generated in
+        minutes.
+      </p>
+
+      <div class="proof-wrapper">
+        <div class="avatars">
+          <img src="Images/user-collected (1).webp" alt="User 1" />
+        </div>
+        <div class="rating">
+          <p>⭐️⭐️⭐️⭐️⭐️ <strong>5.0</strong></p>
+          <p class="small-text">Join 32,000+ Creators</p>
+        </div>
+        <div class="embedded">
+          <p>Embedded Into <strong>40+ SMM Platforms</strong></p>
+          <div class="platform-icons">
+            <img src="Images/embed-collected.png" alt="Platform 1" />
+          </div>
+        </div>
+      </div>
+
+      <button class="cta-button">
+        Start Creating Free Carousels
+        <span class="arrow">→</span>
+      </button>
+
+      <p class="subtext">
+        ✅No Credit Card Required | Free Downloads Every Month
+      </p>
+    </div>
+  </section>
+  
+
+  <!----------------------plans-section----------------------->
+  <section class="plans-section" id="plans-section">
+    <div class="container">
+      <h2 class="section-title">Plans for Your Carousel Creation Needs</h2>
+      <p class="section-subtitle">From solo creators to agencies, we have a plan that fits your requirements.</p>
+  
+      <div class="toggle-wrapper">
+        <span class="toggle-label">Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billingToggle">
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Yearly</span>
+      </div>
+  
+      <p class="promo-text" id="promoText" style="display: none;">30% OFF ON YEARLY SUBSCRIPTION! - <strong>ANNUAL30OFF</strong></p>
+  
+      <div class="plans-grid">
+         
+        <!-- STARTER PLAN -->
+        <div class="plan-card">
+          <h3>STARTER PLAN</h3>
+          <p class="price" data-month="$10" data-year="$7">$10<span>/month</span></p>
+          <p class="desc">Perfect for getting started.</p>
+          <ul>
+            <li>Watermark-free exports</li>
+            <li>Access to basic AI models (GPT-4o, Claude Haiku)</li>
+            <li>30 downloads/month</li>
+            <li>8 AI Generated Slides per Carousel</li>
+          </ul>
+          <button class="btn">Get Started</button>
+          <p class="tax-note">* All prices are subject to applicable taxes.</p>
+        </div>
+  
+        <!-- SOLOPRENEUR PLAN -->
+        <div class="plan-card highlight">
+          <h3>SOLOPRENEUR PLAN</h3>
+          <p class="price">
+            <span class="line-through" data-month="$20" data-year="$14">$20</span>
+            <span class="real-price" data-month="$10" data-year="$10">$10</span><span>/month</span>
+          </p>
+          <p class="savings" id="soloSavings" style="display: none;">Saves you $120 per year.</p>
+          <p class="desc">Perfect for solo creators.</p>
+          <ul>
+            <li>Watermark-free exports</li>
+            <li>Access to advanced AI models (GPT-4, Claude Sonnet)</li>
+            <li>15 AI Generated Slides per Carousel</li>
+            <li>Up to 5 Brands</li>
+            <li>Unlimited downloads</li>
+            <li>Access to all templates</li>
+            <li>Custom color palettes</li>
+            <li>Create custom templates</li>
+          </ul>
+          <button class="btn">Get Started</button>
+          <p class="tax-note">* All prices are subject to applicable taxes.</p>
+        </div>
+  
+        <!-- TEAM PLAN -->
+        <div class="plan-card">
+          <h3>TEAM PLAN</h3>
+          <p class="price">
+            <span class="line-through" data-month="$50" data-year="$36">$50</span>
+            <span class="real-price" data-month="$25" data-year="$25">$25</span><span>/month</span>
+          </p>
+          <p class="savings" id="teamSavings" style="display: none;">Saves you $300 per year.</p>
+          <p class="desc">Perfect for small teams.</p>
+          <ul>
+            <li>100 AI generated images per month</li>
+            <li>Up to 5 workspaces</li>
+            <li>Up to 20 slides per carousel</li>
+            <li>15 custom templates</li>
+          </ul>
+          <button class="btn">Get Started</button>
+          <p class="tax-note">* All prices are subject to applicable taxes.</p>
+        </div>
+      </div>
+  
+      <p class="add-ons-text">If you require additional limits, you can <strong>add them as Add-Ons</strong> to your subscription.</p>
+    </div>
+  </section>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
